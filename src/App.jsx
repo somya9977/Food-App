@@ -37,7 +37,7 @@ export default function TomatoRestaurant() {
 
   // Updated menu items with categories
  const menuItems = [
-  { id: 1, name: "Onion Mushroom Sandwich", price: 18.99, image: import.meta.env.BASE_URL + "images/mushroom-onion-grilled-cheese-16.jpg", category: "Fish" },
+  { id: 1, name: "Onion Mushroom Sandwich", price: 18.99, image: import.meta.env.BASE_URL + "public/images/mushroom-onion-grilled-cheese-16.jpg", category: "Fish" },
   { id: 2, name: "Caesar Salad", price: 14.99, image: import.meta.env.BASE_URL + "images/Caesar-salad_-4.jpg", category: "Salad" },
   { id: 3, name: "Chicken Teriyaki", price: 16.99, image: import.meta.env.BASE_URL + "images/chicken-teriyaki-500x500.webp", category: "Chicken" },
   { id: 4, name: "Mediterranean Wrap", price: 12.99, image: import.meta.env.BASE_URL + "images/mediterranean-chicken-wrap-20.jpg", category: "Salad" },
