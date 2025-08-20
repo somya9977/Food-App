@@ -36,20 +36,21 @@ export default function TomatoRestaurant() {
   ];
 
   // Updated menu items with categories
-  const menuItems = [
-    { id: 1, name: "Onion Mushroom Sandwich", price: 18.99, image: "/images/mushroom-onion-grilled-cheese-16.jpg", category: "Fish" },
-    { id: 2, name: "Caesar Salad", price: 14.99, image: "/images/Caesar-salad_-4.jpg", category: "Salad" },
-    { id: 3, name: "Chicken Teriyaki", price: 16.99, image: "/images/chicken-teriyaki-500x500.webp", category: "Chicken" },
-    { id: 4, name: "Mediterranean Wrap", price: 12.99, image: "/images/mediterranean-chicken-wrap-20.jpg", category: "Salad" },
-    { id: 5, name: "Veg Spring Rolls ", price: 24.99, image: "/images/spring-rolls-with-vegetables.jpg", category: "Meat" },
-    { id: 6, name: "Mediterranean Vegetable Sandwich", price: 15.99, image: "images/Mediterranean Vegetable Sandwich.webp", category: "Fish" },
-    { id: 7, name: "Kathi Roll ", price: 22.99, image: "/images/kathi-roll-recipe.jpg", category: "Meat" },
-    { id: 8, name: "Grilled Chicken", price: 17.99, image: "images/Grilled-Chicken-Breast-24SQ1200.jpg", category: "Chicken" },
-    { id: 9, name: "Greek Salad", price: 13.99, image: "/images/Greek-Salad-TIMG.jpg", category: "Salad" },
-    { id: 10, name: "Chocolate Cake", price: 8.99, image: "/images/chocolate-cake-with-chocolate-ganache-12.jpg", category: "Dessert" },
-    { id: 11, name: "Chocolate shake", price: 4.99, image: "/images/110924172603295266e12c388cc54.webp", category: "Drinks" },
-    { id: 12, name: "Tiramisu", price: 7.99, image: "/images/Tiramisu-1200.jpg", category: "Dessert" }
-  ];
+ const menuItems = [
+  { id: 1, name: "Onion Mushroom Sandwich", price: 18.99, image: import.meta.env.BASE_URL + "images/mushroom-onion-grilled-cheese-16.jpg", category: "Fish" },
+  { id: 2, name: "Caesar Salad", price: 14.99, image: import.meta.env.BASE_URL + "images/Caesar-salad_-4.jpg", category: "Salad" },
+  { id: 3, name: "Chicken Teriyaki", price: 16.99, image: import.meta.env.BASE_URL + "images/chicken-teriyaki-500x500.webp", category: "Chicken" },
+  { id: 4, name: "Mediterranean Wrap", price: 12.99, image: import.meta.env.BASE_URL + "images/mediterranean-chicken-wrap-20.jpg", category: "Salad" },
+  { id: 5, name: "Veg Spring Rolls", price: 24.99, image: import.meta.env.BASE_URL + "images/spring-rolls-with-vegetables.jpg", category: "Meat" },
+  { id: 6, name: "Mediterranean Vegetable Sandwich", price: 15.99, image: import.meta.env.BASE_URL + "images/Mediterranean Vegetable Sandwich.webp", category: "Fish" },
+  { id: 7, name: "Kathi Roll", price: 22.99, image: import.meta.env.BASE_URL + "images/kathi-roll-recipe.jpg", category: "Meat" },
+  { id: 8, name: "Grilled Chicken", price: 17.99, image: import.meta.env.BASE_URL + "images/Grilled-Chicken-Breast-24SQ1200.jpg", category: "Chicken" },
+  { id: 9, name: "Greek Salad", price: 13.99, image: import.meta.env.BASE_URL + "images/Greek-Salad-TIMG.jpg", category: "Salad" },
+  { id: 10, name: "Chocolate Cake", price: 8.99, image: import.meta.env.BASE_URL + "images/chocolate-cake-with-chocolate-ganache-12.jpg", category: "Dessert" },
+  { id: 11, name: "Chocolate shake", price: 4.99, image: import.meta.env.BASE_URL + "images/110924172603295266e12c388cc54.webp", category: "Drinks" },
+  { id: 12, name: "Tiramisu", price: 7.99, image: import.meta.env.BASE_URL + "images/Tiramisu-1200.jpg", category: "Dessert" }
+];
+
 
   // Filter menu items based on selected category
   const filteredMenuItems = selectedCategory === 'All' 
